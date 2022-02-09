@@ -61,11 +61,6 @@ table {
   border-spacing: 0;
 }
 
-.container {
-  max-width: 1280px;
-  margin: 0 auto;
-}
-
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -75,16 +70,4 @@ table {
   padding: 0;
   overflow: hidden;
   clip: rect(0 0 0 0);
-}
-
-@media (max-width: 767.98px) {
-  .container {
-    padding: 0 30px;
-  }
-}
-
-@media (max-width: 575.98px) {
-  .container {
-    padding: 0 15px;
-  }
 }

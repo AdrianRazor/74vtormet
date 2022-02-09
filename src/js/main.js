@@ -20,3 +20,18 @@ listItem.forEach(function (item) {
         };
     });
 });
+
+document.addEventListener("scroll", (e) => {
+    let tabHead = document.querySelectorAll('.table__head');
+    let tab = document.querySelectorAll('.table__info');
+    
+    for (let i = 0; i < tab.length; i++) {
+        const { top } = tab[i].getBoundingClientRect();
+
+        if (top <= 0 && window.screen.width <= 1280) {
+            tabHead[i].style.transform = `translateY(${-top}px)`
+        } else {
+            tabHead[i].style.transform = `none`
+        }
+    };
+});

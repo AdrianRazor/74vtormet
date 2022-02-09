@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Noto Sans';
-    src: url("../fonts/Notosansdisplayregular.woff") format("woff");
+    src: url("../fonts/NotoSans-Regular.ttf") format("ttf");
     font-style: normal;
     font-weight: normal;
 }
@@ -14,9 +14,9 @@
 
 @font-face {
     font-family: 'Noto Sans';
-    src: url("../fonts/Notosansdisplayextrabold.woff") format("woff");
+    src: url("../fonts/NotoSans-Bold.ttf") format("ttf");
     font-style: normal;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 @font-face {
@@ -24,4 +24,25 @@
     src: url("../fonts/Oswaldregular.woff") format("woff");
     font-style: normal;
     font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Oswald';
+    src: url("../fonts/Oswaldmedium.woff") format("woff");
+    font-style: normal;
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: url("../fonts/NotoSansSC-Regular.otf") format("otf");
+    font-style: normal;
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Noto Sans SC';
+    src: url("../fonts/NotoSansSC-Light.otf") format("otf");
+    font-style: normal;
+    font-weight: 300;
 }

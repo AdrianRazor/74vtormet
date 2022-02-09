@@ -1659,6 +1659,23 @@ listItem.forEach(function (item) {
     ;
   });
 });
+document.addEventListener("scroll", function (e) {
+  var tabHead = document.querySelectorAll('.table__head');
+  var tab = document.querySelectorAll('.table__info');
+
+  for (var i = 0; i < tab.length; i++) {
+    var _tab$i$getBoundingCli = tab[i].getBoundingClientRect(),
+        top = _tab$i$getBoundingCli.top;
+
+    if (top <= 0 && window.screen.width <= 1280) {
+      tabHead[i].style.transform = "translateY(".concat(-top, "px)");
+    } else {
+      tabHead[i].style.transform = "none";
+    }
+  }
+
+  ;
+});
 
 /***/ })
 

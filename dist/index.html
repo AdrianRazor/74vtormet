@@ -10,7 +10,7 @@
 <body>
 
 <section class="table">
-	<div class="container table__container">
+	<div class="table__container">
 		<h2 class="table__title">справочная</h2>
 		<div class="table__wrapper">
 			<div class="table__nav">
@@ -19,13 +19,14 @@
 					<li class="table__item">Содержание меди в двигателях</li>
 					<li class="table__item">Хим. состав ломов категории Б</li>
 					<li class="table__item">Щелочные аккумуляторы</li>
+					<li class="table__item">Баббиты</li>
 				</ul>
 				<div class="table__arrow"></div>
 			</div>
 
 			<div class="table__tab table__tab--active">
 				<table class="table__info table__info-brand">
-					<thead>
+					<thead class="table__head">
 						<tr>
 							<th>
 								Сплав
@@ -970,10 +971,11 @@
 						</tr>
 					</tbody>
 				</table>
+				<div class="table__gradient"></div>
 			</div>
 			<div class="table__tab">
 				<table class="table__info table__info-copper">
-					<thead>
+					<thead class="table__head">
 						<tr>
 							<th>
 								Мощность, кВт
@@ -995,178 +997,401 @@
 					<tbody>
 						<tr>
 							<td>0,06</td>
-							<td><span class="table__info-copper--color">кг меди в двигателе</span></td>
-							<td>0.46 из 3.3/3</td>
+							<td class="table__info-copper--color">кг меди в двигателе</td>
+							<td>
+								<span class="table__info-copper--width">0.46</span>
+								<span class="table__info-copper--opacity">из 3.3/3</span>
+							</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>0,09</td>
-							<td>0.43 из 3.3/3</td>
-							<td>0.538 из 3.3/3</td>
+							<td>
+								<span class="table__info-copper--width">0.43</span>
+								<span class="table__info-copper--opacity">из 3.3/3</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.538</span>
+								<span class="table__info-copper--opacity">из 3.3/3</span>
+							</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>0,12</td>
-							<td>0.538 из 3.3/3</td>
-							<td>0.49 из 4.5/4.3</td>
+							<td>
+								<span class="table__info-copper--width">0.538</span>
+								<span class="table__info-copper--opacity">из 3.3/3</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.49</span>
+								<span class="table__info-copper--opacity">из 4.5/4.3</span>
+							</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>0,18</td>
-							<td>0.4 из 4.5/4.3</td>
-							<td>0.59 из 4.5/4.3</td>
-							<td>0.63 из 6.3/6.1</td>
+							<td>
+								<span class="table__info-copper--width">0.4</span>
+								<span class="table__info-copper--opacity">из 4.5/4.3</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.59</span>
+								<span class="table__info-copper--opacity">из 4.5/4.3</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.63</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>0,25</td>
-							<td>0.45 из 4.5/4.3</td>
-							<td>0.56 из 6.3/6.1</td>
-							<td>0.84 из 6.3/6.1</td>
-							<td>0.95 из 15.1/14</td>
+							<td>
+								<span class="table__info-copper--width">0.45</span>
+								<span class="table__info-copper--opacity">из 4.5/4.3</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.56</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.84</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.95</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
 						</tr>
 						<tr>
 							<td>0,37</td>
-							<td>0.57 из 6.3/6.1</td>
-							<td>0.6 из 6.3/6.1</td>
-							<td>0.97 из 15.1/14</td>
-							<td>1.16 из 17.5/17.1</td>
+							<td>
+								<span class="table__info-copper--width">0.57</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.6</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.97</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.16</span>
+								<span class="table__info-copper--opacity">из 17.5/17.1</span>
+							</td>
 						</tr>
 						<tr>
 							<td>0,55</td>
-							<td>0.61 из 6.3/6.1</td>
-							<td>0.92 из 15.1/14</td>
-							<td>1.1 из 15.1/14</td>
-							<td>1.335 из 20.0/19.5</td>
+							<td>
+								<span class="table__info-copper--width">0.61</span>
+								<span class="table__info-copper--opacity">из 6.3/6.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.92</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.1</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.335</span>
+								<span class="table__info-copper--opacity">из 20.0/19.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>0,75</td>
-							<td>0.92 из 15.1/14</td>
-							<td>0.96 из 15.1/14</td>
-							<td>1.22 из 17.55/17.1</td>
-							<td>1.6 из 25.5</td>
+							<td>
+								<span class="table__info-copper--width">0.92</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">0.96</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.22</span>
+								<span class="table__info-copper--opacity">из 17.55/17.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.6</span>
+								<span class="table__info-copper--opacity">из 25.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>0,9</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
-							<td>1.57 из 25.5</td>
+							<td>
+								<span class="table__info-copper--width">1.57</span>
+								<span class="table__info-copper--opacity">из 25.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>1,1</td>
-							<td>0.94 из 15.1/14</td>
-							<td>1.36 из 17.5/17.1</td>
-							<td>1.55 из 20.0/19.5</td>
-							<td>1.9 из 25.5</td>
+							<td>
+								<span class="table__info-copper--width">0.94</span>
+								<span class="table__info-copper--opacity">из 15.1/14</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.36</span>
+								<span class="table__info-copper--opacity">из 17.5/17.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.55</span>
+								<span class="table__info-copper--opacity">из 20.0/19.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.9</span>
+								<span class="table__info-copper--opacity">из 25.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>1,2</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
-							<td>1.89 из 25.5</td>
+							<td>
+								<span class="table__info-copper--width">1.89</span>
+								<span class="table__info-copper--opacity">из 25.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>1,15</td>
-							<td>1.55 из 17.5/17.1</td>
-							<td>1.47 из 20.0/19.5</td>
-							<td>1.93 из 28.7/25.5</td>
-							<td>2.26 из 42.0/40.5</td>
+							<td>
+								<span class="table__info-copper--width">1.55</span>
+								<span class="table__info-copper--opacity">из 17.5/17.1</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.47</span>
+								<span class="table__info-copper--opacity">из 20.0/19.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.93</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">2.26</span>
+								<span class="table__info-copper--opacity">из 42.0/40.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>1,7</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
-							<td>1.89 из 28.7/25.5</td>
-							<td>2.53 из 42.0/40.5</td>
+							<td>
+								<span class="table__info-copper--width">1.89</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">2.53</span>
+								<span class="table__info-copper--opacity">из 42.0/40.5</span>
+							</td>
 						</tr>
 						<tr>
 							<td>2,2</td>
-							<td>1.78 из 20.0/19.5</td>
-							<td>1.9 из 28.7/25.5</td>
-							<td>2.27 из 42.0/40.5</td>
-							<td>3 из 56.0/54.0</td>
+							<td>
+								<span class="table__info-copper--width">1.78</span>
+								<span class="table__info-copper--opacity">из 20.0/19.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">1.9</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">2.27</span>
+								<span class="table__info-copper--opacity">из 42.0/40.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
 						</tr>
 						<tr>
 							<td>2,4</td>
 							<td>&nbsp;</td>
-							<td>1.92 из 28.7/25.5</td>
+							<td>
+								<span class="table__info-copper--width">1.92</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</span>
+							</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>3</td>
-							<td>2.57 из 28.7/25.5</td>
-							<td>2.87 из 36.0/36.4</td>
-							<td>3 из 56.0/54.0</td>
-							<td>3.55 из 56.0/54.0</td>
+							<td>
+								<span class="table__info-copper--width">2.57</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">2.87</span>
+								<span class="table__info-copper--opacity">из 36.0/36.4</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3.55</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
 						</tr>
 						<tr>
 							<td>3.5</td>
-							<td>2.47 из 28.7/25.5</td>
+							<td>
+								<span class="table__info-copper--width">2.47</span>
+								<span class="table__info-copper--opacity">из 28.7/25.5</sp[an]>
+							</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 							<td>&nbsp;</td>
 						</tr>
 						<tr>
 							<td>4</td>
-							<td>3.7 из 36.0/36.4</td>
-							<td>2.88 из 42.0/40.5</td>
-							<td>3.42 из 56.0/54.0</td>
-							<td>3.8 из 77.0/72.0</td>
+							<td>
+								<span class="table__info-copper--width">3.7</span>
+								<span class="table__info-copper--opacity">из 36.0/36.4</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">2.88</span>
+								<span class="table__info-copper--opacity">из 42.0/40.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3.42</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3.8</span>
+								<span class="table__info-copper--opacity">из 77.0/72.0</span>
+							</td>
 						</tr>
 						<tr>
 							<td>5.5</td>
-							<td>4.06 из 42.0/40.5</td>
-							<td>3.5 из 56.0/54.0</td>
-							<td>4.36 из 77.0/72.0</td>
-							<td>4.6 из 93.0/90.0</td>
+							<td>
+								<span class="table__info-copper--width">4.06</span>
+								<span class="table__info-copper--opacity">из 42.0/40.5</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">3.5</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">4.36</span>
+								<span class="table__info-copper--opacity">из 77.0/72.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">4.6</span>
+								<span class="table__info-copper--opacity">из 93.0/90.0</span>
+							</td>
 						</tr>
 						<tr>
 							<td>7.5</td>
-							<td>4.75 из 56.0/54.0</td>
-							<td>5.3 из 77.0/72.0</td>
-							<td>5 из 93.0/90.0</td>
-							<td>7.3 из 135</td>
+							<td>
+								<span class="table__info-copper--width">4.75</span>
+								<span class="table__info-copper--opacity">из 56.0/54.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">5.3</span>
+								<span class="table__info-copper--opacity">из 77.0/72.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">5</span>
+								<span class="table__info-copper--opacity">из 93.0/90.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">7.3</span>
+								<span class="table__info-copper--opacity">из 135</span>
+							</td>
 						</tr>
 						<tr>
 							<td>11</td>
-							<td>0 из 93.0/90.0</td>
-							<td>6.15 из 93.0/90.0</td>
-							<td>8 из 135</td>
-							<td>8.45 из 160</td>
+							<td>
+								<span class="table__info-copper--width">0</span>
+								<span class="table__info-copper--opacity">из 93.0/90.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">6.15</span>
+								<span class="table__info-copper--opacity">из 93.0/90.0</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">8</span>
+								<span class="table__info-copper--opacity">из 135</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">8.45</span>
+								<span class="table__info-copper--opacity">из 160</span>
+							</td>
 						</tr>
 						<tr>
 							<td>15</td>
-							<td>9.1 из 130</td>
-							<td>10.4 из 135</td>
-							<td>9.25 из 160</td>
-							<td>11.65 из 195</td>
+							<td>
+								<span class="table__info-copper--width">9.1</span>
+								<span class="table__info-copper--opacity">из 130</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">10.4</span>
+								<span class="table__info-copper--opacity">из 135</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">9.25</span>
+								<span class="table__info-copper--opacity">из 160</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">11.65</span>
+								<span class="table__info-copper--opacity">из 195</span>
+							</td>
 						</tr>
 						<tr>
 							<td>18.5</td>
-							<td>9.65 из 145</td>
-							<td>11.2 из 160</td>
-							<td>12.15 из 195</td>
-							<td>13.3 из 270</td>
+							<td>
+								<span class="table__info-copper--width">9.65</span>
+								<span class="table__info-copper--opacity">из 145</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">11.2</span>
+								<span class="table__info-copper--opacity">из 160</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">12.15</span>
+								<span class="table__info-copper--opacity">из 195</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">13.3</span>
+								<span class="table__info-copper--opacity">из 270</span>
+							</td>
 						</tr>
 						<tr>
 							<td>22</td>
-							<td>12.4 из 165</td>
-							<td>13.2 из 175</td>
-							<td>15.85 из 270</td>
-							<td>14.5 из 310/300</td>
+							<td>
+								<span class="table__info-copper--width">12.4</span>
+								<span class="table__info-copper--opacity">из 165</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">13.2</span>
+								<span class="table__info-copper--opacity">из 175</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">15.85</span>
+								<span class="table__info-copper--opacity">из 270</span>
+							</td>
+							<td>
+								<span class="table__info-copper--width">14.5</span>
+								<span class="table__info-copper--opacity">из 310/300</span>
+							</td>
 						</tr>
 					</tbody>
 				</table>
+				<div class="table__gradient"></div>
 			</div>
 			<div class="table__tab">
 				<table class="table__info">
-					<thead>
+					<thead class="table__head">
 						<tr>
 							<th>Группа</th>
 							<th>Хром, %</th>
@@ -2911,6 +3136,7 @@
 						</tr>
 					</tbody>
 				</table>
+				<div class="table__gradient"></div>
 			</div>
 			<div class="table__tab">
 				<div class="table__battery-tab">
@@ -2920,7 +3146,7 @@
 							<span class="table__battery-title--lowercase">отечественные</span>
 						</h3>
 						<table class="table__info">
-							<thead>
+							<thead class="table__head">
 								<tr>
 									<th>Марка</th>
 									<th>Вес, кг</th>
@@ -3156,7 +3382,7 @@
 							<span class="table__battery-title--lowercase">импортные</span>
 						</h3>
 						<table class="table__info">
-							<thead>
+							<thead class="table__head">
 								<tr>
 									<th>Марка</th>
 									<th>Вес, кг</th>
@@ -3381,7 +3607,7 @@
 					<div class="table__battery-wrapper">
 						<h3 class="table__battery-title">ТПНЖ</h3>
 						<table class="table__info">
-							<thead>
+							<thead class="table__head">
 								<tr>
 									<th>Марка</th>
 									<th>Вес, кг</th>
@@ -3404,74 +3630,44 @@
 						</table>
 					</div>
 				</div>
+				<div class="table__gradient"></div>
 			</div>
-		</div>
-	</div>
-	<div class="widget__fundraising-completed widget">
-		<div class="widget__body">
-			<a href="/charity">
-				<div class="widget__body-span-wrap">
-					<span class="widget__body-general-span widget__body-span">Сбор средств завершён</span>
-				</div>
-				<div class="widget__image-block">
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/icon-widget-mobile2.png">
-						<img class="widget__img-icon" src="img/icon-widget.png" alt="icon-widget">
-					</picture>
-				</div>
-				<div class="widget__img-red-stars-block">
-					<div class="star-red-one">
-						<picture>
-							<source media="(max-width: 1023px)" srcset="img/star-red-mobile-1.svg">
-							<img class="widget__img-icon" src="img/star-red-1.svg" alt="icon-star">
-						</picture>
-					</div>
-					<div class="star-red-two">
-						<picture>
-							<source media="(max-width: 1023px)" srcset="img/star-red-mobile-2.svg">
-							<img class="widget__img-icon" src="img/star-red-2.svg" alt="icon-star">
-						</picture>
-					</div>
-					<div class="star-red-three">
-						<picture>
-							<source media="(max-width: 1023px)" srcset="img/star-red-mobile-3.svg">
-							<img class="widget__img-icon" src="img/star-red-3.svg" alt="icon-star">
-						</picture>
-					</div>
-					<div class="star-red-four">
-						<picture>
-							<source media="(max-width: 1023px)" srcset="img/star-red-mobile-4.svg">
-							<img class="widget__img-icon" src="img/star-red-4.svg" alt="icon-star">
-						</picture>
-					</div>
-				</div>
-				<div class="widget__img-stars-block">
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-1.svg">
-						<img class="star-one" src="img/star-1.svg" alt="icon-star">
-					</picture>
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-2.svg">
-						<img class="star-two" src="img/star-2.svg" alt="icon-star">
-					</picture>
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-2.svg">
-						<img class="star-three" src="img/star-2.svg" alt="icon-star">
-					</picture>
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-2.svg">
-						<img class="star-four" src="img/star-2.svg" alt="icon-star">
-					</picture>
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-1.svg">
-						<img class="star-five" src="img/star-2.svg" alt="icon-star">
-					</picture>
-					<picture>
-						<source media="(max-width: 1023px)" srcset="img/star-mobile-2.svg">
-						<img class="star-six" src="img/star-1.svg" alt="icon-star">
-					</picture>
-				</div>
-			</a>
+			<div class="table__tab">
+				<table class="table__info">
+					<thead class="table__head">
+						<tr>
+							<th>Марка баббита</th>
+							<th>Олово, %</th>
+							<th>Свинец</th>
+							<th>Сурьма</th>
+							<th>Медь</th>
+							<th>Железо</th>
+							<th>Висмут</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Б83	</td>
+							<td>77—83</td>
+							<td>0,35</td>
+							<td>10—12</td>
+							<td>5,6—6,5</td>
+							<td>0,10</td>
+							<td>0,05</td>
+						</tr>
+						<tr>
+							<td>Б16</td>
+							<td>15—17</td>
+							<td>62—68</td>
+							<td>15—17</td>
+							<td>1,5—2</td>
+							<td>0,08</td>
+							<td>0,10</td>
+						</tr>
+					</tbody>
+				</table>
+				<div class="table__gradient"></div>
+			</div>
 		</div>
 	</div>
 </section>
