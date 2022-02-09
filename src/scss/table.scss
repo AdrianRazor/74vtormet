@@ -1,0 +1,376 @@
+.table {
+    background-color: #2c2c2c;
+    position: relative;
+
+    &__container {
+        padding-top: 24px;
+        padding-bottom: 132px;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &__title {
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 36px;
+        line-height: 49px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        
+        margin-bottom: 20px;
+    }
+
+    &__nav {
+        margin-bottom: 45px;
+    }
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        font-family: 'Noto Sans', sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+
+        cursor: pointer;
+        padding-bottom: 4px;
+        min-height: 29px;
+        border-bottom: 1px solid #FFFFFF;
+        transition: all 0.1s ease;
+
+        opacity: 0.6;
+
+        &:not(:last-child) {
+            margin-right: 28px;
+        }
+
+        &:hover {
+            border-bottom: 3px solid #FFFFFF;
+            opacity: 1;
+            transition: all 0.1s ease;
+        }
+
+        &--active {
+            border-bottom: 3px solid #FFFFFF;
+            opacity: 1;
+        }
+    }
+
+    &__arrow {
+        display: none;
+    }
+
+    &__tab {
+        overflow: auto;
+        display: none;
+
+        &--active {
+            display: block;
+        }
+    }
+
+    &__info {
+        // min-width: 1220px;
+        width: 100%;
+
+        & th {
+            font-family: 'Oswald', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+            color: #FFFFFF;
+            text-align: left;
+            white-space: nowrap;
+    
+            padding-top: 8px;
+            padding-bottom: 13px;
+            padding-left: 12px;
+            padding-right: 8px;
+    
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        & td {
+            font-family: 'Noto Sans', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 20px;
+            line-height: 20px;
+            color: #FFFFFF;
+            text-align: right;
+            white-space: nowrap;
+    
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 12px;
+            padding-right: 8px;
+    
+            border-right: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        & td:first-child {
+            text-align: left;
+        }
+    
+        & tr:first-child td {
+            padding-top: 18px;
+        }
+    
+        & tr:last-child td {
+            padding-bottom: 18px;
+        }
+    
+        & tr:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            cursor: default;
+        }
+    }
+
+    &__info-brand td:nth-child(2) {
+        text-align: left;
+    }
+
+    &__info-copper {
+        & td:not(:first-child) {
+            text-align: center;            
+        }
+
+        &--color {
+            color: #FFC880;
+        }
+    }
+
+    &__battery-tab {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__battery-wrapper:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__battery-title {
+        font-family: 'Oswald', sans-serif;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 32px;
+        line-height: 40px;
+        color: #FFFFFF;
+        white-space: nowrap;
+
+        margin-bottom: 12px;
+
+        &--lowercase {
+            opacity: 0.3;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .table {
+        &__item {
+            min-height: 51px;
+            max-width: 165px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .table {
+        &__container {
+            padding-top: 137px;
+        }
+
+        &__title {
+            display: none;
+        }
+
+        &__wrapper {
+            position: relative;
+        }
+
+        &__nav {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            max-height: 200px;
+            transition: max-height 0.2s ease;
+            overflow: hidden;
+
+            background-color: #2c2c2c;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 4px;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            padding-left: 15px;
+            padding-right: 15px;
+            
+            margin: 0;
+
+            position: absolute;
+            top: -75px;
+            left: 0;
+            z-index: 10;
+        }
+
+        &__list {
+            display: block;
+            width: 100%;
+            cursor: pointer;
+        }
+
+        &__item {
+            max-width: unset;
+            min-height: unset;
+            border-bottom: none;
+            padding-bottom: 0;
+            display: none;
+            padding-top: 6px;
+            padding-bottom: 6px;
+            
+            &:not(:last-child) {
+                margin-right: 0;
+            }
+
+            &:hover {
+                border-bottom: none;
+            }
+
+            &--show {
+                display: block;
+            }
+
+            &--active {
+                border-bottom: none;
+                display: block;
+                margin: 0;
+            }
+        }
+
+        &__arrow {
+            width: 22px;
+            height: 34px;
+            display: block;
+            position: relative;
+
+            &::before,
+            &::after {
+                content: '';
+                display: block;
+                width: 13px;
+                height: 2px;
+                background-color: #fff;
+        
+                position: absolute;
+                top: 50%;
+                margin-top: -1px;
+                left: 50%;
+            }
+        
+            &::before {
+                margin-left: -10px;
+                transform: rotate(45deg);
+                transition: transform 0.2s ease;
+            }
+        
+            &::after {
+                margin-left: -2px;
+                transform: rotate(-45deg);
+                transition: transform 0.2s ease;
+            }
+
+            &--up {
+                &::before {
+                    transform: rotate(-45deg);
+                    transition: transform 0.2s ease;
+                }
+            
+                &::after {
+                    transform: rotate(45deg);
+                    transition: transform 0.2s ease;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .table {
+        &__container {
+            padding-bottom: 25px;
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+
+        &__nav {
+            padding-top: 2px;
+            padding-bottom: 2px;
+            padding-left: 12px;
+            padding-right: 12px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        &__item {
+            font-size: 12px;
+
+            padding-top: 4px;
+            padding-bottom: 4px;
+        }
+
+        &__arrow {
+            width: 18px;
+            height: 28px;
+
+            &::before,
+            &::after {
+                width: 9px;
+                height: 1px;
+            }
+            
+            &::before {
+                margin-left: -8px;
+            }
+        }
+
+        &__info th {
+            font-size: 14px;
+            line-height: 16px;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 8px;
+            padding-right: 4px;
+        }
+
+        &__info td {
+            font-size: 12px;
+            line-height: 16px;
+
+            padding-top: 5px;
+            padding-bottom: 5px;
+            padding-left: 8px;
+            padding-right: 4px;
+        }
+
+        & tr:first-child td {
+            padding-top: 10px;
+        }
+
+        & tr:last-child td {
+            padding-bottom: 10px;
+        }
+
+        &__battery-title {
+            font-size: 16px;
+            line-height: 16px;
+        }
+    }
+}
